@@ -7,7 +7,7 @@
 
 int _print_int(int num)
 {
-int num_digits = 0;
+int num_digits = 0, i = 0;
 int temp = num;
 int *digits = (int *)malloc(sizeof(int) * num);
 
@@ -29,7 +29,7 @@ do {
 } while (temp > 0);
 
 /*Print digits in reverse order*/
-for (int i = num_digits - 1; i >= 0; i--)
+for (i = num_digits - 1; i >= 0; i--)
 {
 	_print_char(digits[i] + '0');
 }

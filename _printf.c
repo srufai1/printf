@@ -7,9 +7,10 @@
 **/
 int _printf(const char *format, ...)
 {
+int char_count = 0;
 va_list container;
 va_start(container, format);
-int char_count = 0;
+
 
 while (*format != '\0')
 {
