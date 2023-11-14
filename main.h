@@ -11,6 +11,6 @@ int _printf(const char* format, ...);
 int _print_char(char c);
 int _print_str(char *str);
 int _print_percent(void);
-int _print_int(int value);
+int _print_int(int num);
 
 #endif
